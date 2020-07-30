@@ -6,7 +6,7 @@
 /*   By: mstoops <mstoops@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/25 20:43:05 by mstoops           #+#    #+#             */
-/*   Updated: 2020/07/30 03:14:43 by mstoops          ###   ########.fr       */
+/*   Updated: 2020/07/30 15:36:41 by mstoops          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,4 +80,11 @@ void	ft_printf_putnbr(long number, unsigned int base, t_args *parsed)
 		symb = m + (m % base > 9 ? cp - 10 : '0');
 		write(1, &symb, 1);
 	}
+}
+
+void	ft_putstr_ft_with_len(char *s, int fd, int length)
+{
+	if (!s)
+		return ;
+	write(fd, s, length);
 }

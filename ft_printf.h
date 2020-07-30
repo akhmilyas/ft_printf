@@ -6,7 +6,7 @@
 /*   By: mstoops <mstoops@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/25 19:26:23 by mstoops           #+#    #+#             */
-/*   Updated: 2020/07/30 02:59:31 by mstoops          ###   ########.fr       */
+/*   Updated: 2020/07/30 15:36:49 by mstoops          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,10 +41,13 @@ void				ft_parse_width(const char **format, t_args *parsed,\
 int					ft_parse_acc(const char **format, t_args *parsed, va_list *args);
 void				ft_print_format(va_list *args, t_args *parsed);
 void				ft_printf_num(long number, t_args *parsed, int base);
+void				ft_printf_c(char c, t_args *parsed);
+void				ft_printf_s(char *str, t_args *parsed);
 
 int					ft_find_type_format(char symbol);
 void				ft_printf_putchar(int c, int length);
 int					ft_length_number(long number, int base);
 void				ft_printf_putnbr(long number, unsigned int base, t_args *parsed);
+void				ft_putstr_ft_with_len(char *s, int fd, int length);
 
 #endif
