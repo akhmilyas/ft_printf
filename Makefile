@@ -1,7 +1,7 @@
 NAME = libftprintf.a
 LIBFT = libft.a
 LIBFTFOLDER = libft/
-FLAGS = -Wall -Werror -Wextra -g
+FLAGS = -Wall -Werror -Wextra
 HEADER = ft_printf.h
 
 SRCS = ft_printf.c \
