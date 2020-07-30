@@ -6,7 +6,7 @@
 /*   By: mstoops <mstoops@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/30 15:20:36 by mstoops           #+#    #+#             */
-/*   Updated: 2020/07/30 15:43:58 by mstoops          ###   ########.fr       */
+/*   Updated: 2020/07/30 16:19:34 by mstoops          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,5 +85,4 @@ void		ft_printf_s(char *str, t_args *parsed)
 		ft_string_with_acc(str, parsed);
 	else
 		ft_string_without_acc(str, parsed);
-
 }
