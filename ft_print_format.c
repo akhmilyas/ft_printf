@@ -6,7 +6,7 @@
 /*   By: mstoops <mstoops@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/29 17:41:10 by mstoops           #+#    #+#             */
-/*   Updated: 2020/07/30 15:28:56 by mstoops          ###   ########.fr       */
+/*   Updated: 2020/07/30 15:48:07 by mstoops          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,8 @@ void		ft_print_format(va_list *args, t_args *parsed)
 		ft_printf_num((long)va_arg(*args, unsigned int), parsed, 10);
 	else if (parsed->type == 'x' || parsed->type == 'X')
 		ft_printf_num((long)va_arg(*args, unsigned int), parsed, 16);
-	// else if (parsed->type == 'p')
-	// 	ft_printf_pointer(va_arg(*args, size_t), parsed, 16);
+	else if (parsed->type == 'p')
+		ft_printf_pointer(va_arg(*args, size_t), parsed, 16);
 	else if (parsed->type == '%')
 		ft_printf_c('%', parsed);
 }

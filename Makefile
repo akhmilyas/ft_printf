@@ -8,7 +8,9 @@ SRCS = ft_printf.c \
 		ft_utils1.c \
 		ft_parser.c \
 		ft_print_format.c \
-		ft_printf_num.c
+		ft_printf_num.c \
+		ft_printf_string.c \
+		ft_printf_pointer.c
 
 OBJS = $(SRCS:.c=.o)
 

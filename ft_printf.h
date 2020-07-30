@@ -6,7 +6,7 @@
 /*   By: mstoops <mstoops@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/25 19:26:23 by mstoops           #+#    #+#             */
-/*   Updated: 2020/07/30 15:36:49 by mstoops          ###   ########.fr       */
+/*   Updated: 2020/07/30 16:07:31 by mstoops          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,6 +43,7 @@ void				ft_print_format(va_list *args, t_args *parsed);
 void				ft_printf_num(long number, t_args *parsed, int base);
 void				ft_printf_c(char c, t_args *parsed);
 void				ft_printf_s(char *str, t_args *parsed);
+void				ft_printf_pointer(size_t number, t_args *parsed, int base);
 
 int					ft_find_type_format(char symbol);
 void				ft_printf_putchar(int c, int length);
